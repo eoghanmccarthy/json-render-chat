@@ -55,6 +55,7 @@ const TOOL_LABELS: Record<string, [string, string]> = {
   getGitHubRepo: ["Fetching GitHub repo", "Fetched GitHub repo"],
   getGitHubPullRequests: ["Fetching pull requests", "Fetched pull requests"],
   getHackerNewsTop: ["Loading Hacker News", "Loaded Hacker News"],
+  webSearch: ["Searching the web", "Searched the web"]
 };
 
 function ToolCallDisplay({
@@ -350,7 +351,7 @@ export function ChatComponent() {
       {/* Header */}
       <header className="border-b px-6 py-3 flex items-center justify-between flex-shrink-0">
         <div className="flex items-center gap-3">
-          <h1 className="text-lg font-semibold">json-render Chat Example</h1>
+          <h1 className="text-lg font-semibold">Chat demo</h1>
         </div>
         <div className="flex items-center gap-2">
           {messages.length > 0 && (
@@ -375,7 +376,7 @@ export function ChatComponent() {
                   What would you like to explore?
                 </h2>
                 <p className="text-muted-foreground">
-                  Ask about weather, GitHub repos, crypto prices, or Hacker News -- the agent will
+                  Ask about weather, GitHub repos, or Hacker News -- the agent will
                   fetch real data and build a dashboard.
                 </p>
               </div>

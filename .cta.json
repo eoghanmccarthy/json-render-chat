@@ -1,12 +1,12 @@
 {
-  "projectName": "start-app",
+  "projectName": "json-render-chat",
   "mode": "file-router",
   "typescript": true,
   "tailwind": true,
-  "packageManager": "pnpm",
+  "packageManager": "npm",
   "addOnOptions": {},
   "git": true,
   "version": 1,
   "framework": "react-cra",
-  "chosenAddOns": ["eslint", "nitro", "start"]
+  "chosenAddOns": ["nitro", "start"]
 }

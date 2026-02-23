@@ -4,6 +4,7 @@ import { catalog } from "./render/catalog";
 import { getWeather } from "./tools/weather";
 import { getGitHubPullRequests, getGitHubRepo } from "./tools/github";
 import { getHackerNewsTop } from "./tools/hackernews";
+import { webSearch } from "./tools/search";
 
 const DEFAULT_MODEL = "anthropic/claude-haiku-4.5";
 
@@ -147,6 +148,7 @@ export const agent = new ToolLoopAgent({
     getGitHubRepo,
     getGitHubPullRequests,
     getHackerNewsTop,
+    webSearch
   },
   stopWhen: stepCountIs(5),
   temperature: 0.7,
